@@ -1,0 +1,2 @@
+model_checkpoint_path: "checkpoints_model_transformer_\341\204\200\341\205\263\341\206\257\341\204\214\341\205\265\341\206\272\341\204\200\341\205\265.ckpt"
+all_model_checkpoint_paths: "checkpoints_model_transformer_\341\204\200\341\205\263\341\206\257\341\204\214\341\205\265\341\206\272\341\204\200\341\205\265.ckpt"

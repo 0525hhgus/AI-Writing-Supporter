@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>[AB] AI Writing Supporter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<h1>[AB] AI Writing Supporter</h1>
+<div class="agile-its">
+    <h2>AI 글쓰기 비서 AB입니다.</h2>
+    <div class="w3layouts">
+        <div class="upload-view">
+            <form id="upload" action="/predict" method="POST" enctype="multipart/form-data">
+                <div class="wrapper">
+                    <p>작문 유형</p>
+                    <select name="essay_type">
+                        <option value="essay_type0">=== 선택 ===</option>
+                        <option value="essay_type1">글짓기</option>
+                        <option value="essay_type2">대안제시</option>
+                        <option value="essay_type3">설명글</option>
+                        <option value="essay_type4">주장</option>
+                        <option value="essay_type5">찬성반대</option>
+                    </select>
+                    <p>작문 주제</p>
+                    <input type="text" name="inputs_subject" placeholder="Google 검색 및 URL 입력">
+                    <p>작문 프롬프트</p>
+                    <input type="text" name="inputs_prompt">
+                    <p>작문 텍스트 입력</p>
+                    <input type="text" name="inputs_paragraph">
+                    <p></p>
+                </div>
+                <input type="submit" value="글쓰기 평가">
+                    <span class="result_label">
+                        {{ label }}
+                    </span>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
